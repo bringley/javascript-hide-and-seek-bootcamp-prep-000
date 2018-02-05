@@ -13,6 +13,7 @@ function nestedTarget() {
 //increase values in all ranked-list class items by supplied value n
 function increaseRankBy(n) {
   var ranks = document.querySelector(`.ranked-list`).querySelectorAll(`li`)
+  //what is the value of ranks? perhaps for loop is correct but ranks is wack
   for (let i = 0; i < ranks.length; i++) {
     ranks[i].innerHTML = (parseInt(ranks[i].innerHTML) + parseInt(n)).toString()
   }
